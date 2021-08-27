@@ -1,18 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - a simple program that outputs 0-9
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-	int d;
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-		putchar('\n');
-
+	for (i = 48; i < 58; i++)
+		putchar(i);
+	putchar('\n');
 	return (0);
 }

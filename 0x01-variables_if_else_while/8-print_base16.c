@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - a simple program that outputs the hexadecimal digits
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-	int d;
-	char low;
+	char alpha = '0';
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-		putchar('\n');
-
+	for (i = 0; i < 10; i++, alpha++)
+		putchar(alpha);
+	alpha = 'a';
+	for (i = 0; i < 6; i++, alpha++)
+		putchar(alpha);
+	putchar('\n');
 	return (0);
 }

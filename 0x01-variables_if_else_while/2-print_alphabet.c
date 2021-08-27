@@ -1,18 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - a simple program that prints out the lowercase alphabet
  *
- * Return: Always 0 (Success)
+ * Return: 0 on completion
  */
 int main(void)
 {
-	char low;
+	char a;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		printf("\n");
-
+	for (a = 'a'; a <= 'z'; a++)
+		putchar(a);
+	putchar('\n');
 	return (0);
 }

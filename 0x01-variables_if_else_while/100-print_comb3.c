@@ -1,26 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - a simple program that outputs 0-9 separated by commas
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
-	int d;
+	int i;
+	int j;
 
-	for (d = 0; d < 90; d++)
+	for (i = 48; i < 57; i++)
 	{
-		for ()
+		for (j = i + 1; j < 58; j++)
 		{
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
-		}
-		if (d != 89)
-		{
-			putchar(',');
-			putchar(' ');
+			putchar(i);
+			putchar(j);
+			if (i != 56 || j != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');

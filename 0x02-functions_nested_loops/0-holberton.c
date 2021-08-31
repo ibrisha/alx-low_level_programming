@@ -7,9 +7,9 @@ int main(void)
 {
 	char ch[] = "Holberton";
 	int i;
-	
+
 	for (i = 0; i < 9; i++)
-        {
+	{
 		_putchar(ch[i]);
 	}
 	_putchar('\n');

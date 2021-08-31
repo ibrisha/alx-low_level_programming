@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *holberton - prints the string "Holberton" from char array
+ *main - prints the string "Holberton" from char array
  *Return:0 on success
  */
 int main(void)

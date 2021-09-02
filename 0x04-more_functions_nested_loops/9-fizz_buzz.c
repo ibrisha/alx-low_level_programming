@@ -1,11 +1,11 @@
 #include < stdio.h >
 /**
- *fizz_buzz - prints numbers from 1-100.
+ *main - prints numbers from 1-100.
  *if number is multiple of 3 it prints Fizz.
  *if number is multiple of 5 it prints Buzz.
- * Return: Nothing.
+ * Return: 0 on success.
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -19,4 +19,5 @@ void fizz_buzz(void)
 			printf("Buzz ");
 	}
 	printf("\n");
+	return (0);
 }

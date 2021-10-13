@@ -7,22 +7,33 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t counter = 0;
-	listint_t *safe_node = *h;
-	listint_t *tmp_node;
+	listint_t *current, *runner, *head;
+	size_t h_i, r_i;
 
-	if (!h)
+	if (h == NULL || *h == NULL)
 		return (0);
-	while (safe_node != NULL)
-	{
-		counter++;
-		tmp_node = safe_node;
-		safe_node = safe_node->next;
-		free(tmp_node);
 
-		if (tmp_node < safe_node)
-			break;
+	current = *h;
+	head = *h;
+	h_i = 0;
+
+	while (head != NULL)
+	{
+		runner = *h;
+		for (r_i = 0; r_i < h_i; r_i++)
+		{
+			if (runner == current)
+			{
+				*h = NULL;
+				return (h_i);
+			}
+			runner = runner->next;
+		}
+		current = head->next;
+		free(head);
+		head = current;
+		h_i++;
 	}
 	*h = NULL;
-	return (counter);
+	return (h_i);
 }

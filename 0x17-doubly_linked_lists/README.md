@@ -2,8 +2,8 @@
 
 At the end of this project, I was able to answer this questions:
 
-*What is a doubly linked list
-*How to use doubly linked lists
+* What is a doubly linked list
+* How to use doubly linked lists
 
 ## Header File :file_folder:
 

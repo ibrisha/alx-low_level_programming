@@ -78,7 +78,7 @@ typedef struct shash_table_s
   * [2-key_index.c](./2-key_index.c): C function that returns the index at which a key/value
   pair should be stored in the array of a `hash_table_t` hash table.
 
-* **3. >>> ht['betty'] = 'holberton'**
+* **3. >>> ht['betty'] = 'cool'**
   * [3-hash_table_set.c](./3-hash_table_set.c): C function that adds an element to a
   `hash_table_t` table.
     * The parameter `key` cannot be an empty string.
@@ -100,7 +100,7 @@ typedef struct shash_table_s
   * [6-hash_table_delete.c](./6-hasb_table_delete.c): C function that deletes a
   `hash_table_t` hash table.
 
-* **7. $ht['Betty'] = 'Holberton'**
+* **7. $ht['Betty'] = 'Cool'**
   * [100-sorted_hash_table.c](./100-sorted_hash_table.c): C functions that define a sorted
   hash table `shash_table_t`.
     * Identical in function to a `hash_table_t` hash table except key/value
